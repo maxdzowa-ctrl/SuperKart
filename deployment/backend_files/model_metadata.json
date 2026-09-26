@@ -1,0 +1,107 @@
+{
+  "run_id": "dd065fc515f42c09e20adcaae579ff40",
+  "model_family": "Random Forest",
+  "manifest": {
+    "code_version": "superkart_cv_v1",
+    "stage": "selected_model_final_fit_v1",
+    "source_sha256": "b12ec41668e69d71d64ca96f2be78a011087f2a9cac6aba6e5cc920544b21ab2",
+    "development_hash": "7ee7d39def4f35dce5649a3b3171f941",
+    "split_hash": "ebd369515500852deafa132860dfd7af",
+    "feature_contract": {
+      "version": "superkart_features_v1",
+      "reference_year": 2025,
+      "feature_columns": [
+        "Product_Weight",
+        "Product_Sugar_Content",
+        "Product_Allocated_Area",
+        "Product_MRP",
+        "Store_Size",
+        "Store_Location_City_Type",
+        "Store_Type",
+        "Product_Id_char",
+        "Store_Age_Years",
+        "Product_Type_Category"
+      ],
+      "numeric_features": [
+        "Product_Weight",
+        "Product_Allocated_Area",
+        "Product_MRP",
+        "Store_Age_Years"
+      ],
+      "categorical_features": [
+        "Product_Sugar_Content",
+        "Store_Size",
+        "Store_Location_City_Type",
+        "Store_Type",
+        "Product_Id_char",
+        "Product_Type_Category"
+      ],
+      "product_category_map": {
+        "Breads": "Perishables",
+        "Breakfast": "Perishables",
+        "Dairy": "Perishables",
+        "Fruits and Vegetables": "Perishables",
+        "Meat": "Perishables",
+        "Seafood": "Perishables",
+        "Baking Goods": "Non Perishables",
+        "Canned": "Non Perishables",
+        "Frozen Foods": "Non Perishables",
+        "Hard Drinks": "Non Perishables",
+        "Health and Hygiene": "Non Perishables",
+        "Household": "Non Perishables",
+        "Others": "Non Perishables",
+        "Snack Foods": "Non Perishables",
+        "Soft Drinks": "Non Perishables",
+        "Starchy Foods": "Non Perishables"
+      },
+      "category_mapping_status": "documented project convention"
+    },
+    "parameters": {
+      "bootstrap": true,
+      "ccp_alpha": 0.0,
+      "criterion": "squared_error",
+      "max_depth": 20,
+      "max_features": 0.7,
+      "max_leaf_nodes": null,
+      "max_samples": null,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 1,
+      "min_samples_split": 10,
+      "min_weight_fraction_leaf": 0.0,
+      "monotonic_cst": null,
+      "n_estimators": 500,
+      "n_jobs": 2,
+      "oob_score": false,
+      "random_state": 42,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "environment": {
+      "python": "3.13.15",
+      "packages": {
+        "numpy": "2.1.3",
+        "pandas": "2.2.3",
+        "scipy": "1.16.3",
+        "scikit-learn": "1.6.1",
+        "xgboost": "2.1.4",
+        "joblib": "1.4.2"
+      }
+    }
+  },
+  "test_metrics": {
+    "RMSE": 269.77307841975806,
+    "MAE": 102.04508446004849,
+    "R2": 0.9349124774957385,
+    "Bias": 4.29703762647228
+  },
+  "deployment_measurements": {
+    "artifact_MiB": 19.38951301574707,
+    "single_prediction_ms": 136.78966350016708,
+    "batch_100_prediction_ms": 165.18487500025003,
+    "final_fit_seconds": 10.610451505999663
+  },
+  "artifact_sha256": "02f9d786b622aad911c0be6467edca84ba9590e7e4b07b80a49f46b134eb4d24",
+  "input_contract": "ten engineered features",
+  "training_rows": 7010,
+  "test_rows": 1753
+}

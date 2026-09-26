@@ -1,0 +1,87 @@
+{
+  "model_run_id": "dd065fc515f42c09e20adcaae579ff40",
+  "reference_year": 2025,
+  "categorical_values": {
+    "Product_Sugar_Content": [
+      "Low Sugar",
+      "No Sugar",
+      "Regular"
+    ],
+    "Store_Size": [
+      "High",
+      "Medium",
+      "Small"
+    ],
+    "Store_Location_City_Type": [
+      "Tier 1",
+      "Tier 2",
+      "Tier 3"
+    ],
+    "Store_Type": [
+      "Departmental Store",
+      "Food Mart",
+      "Supermarket Type1",
+      "Supermarket Type2"
+    ],
+    "Product_Id_char": [
+      "DR",
+      "FD",
+      "NC"
+    ],
+    "Product_Type_Category": [
+      "Non Perishables",
+      "Perishables"
+    ]
+  },
+  "numeric_ranges": {
+    "Product_Weight": {
+      "minimum": 4.0,
+      "maximum": 20.65
+    },
+    "Product_Allocated_Area": {
+      "minimum": 0.004,
+      "maximum": 0.297
+    },
+    "Product_MRP": {
+      "minimum": 31.0,
+      "maximum": 254.34
+    },
+    "Store_Age_Years": {
+      "minimum": 16.0,
+      "maximum": 38.0
+    }
+  },
+  "store_profile_columns": [
+    "Store_Size",
+    "Store_Location_City_Type",
+    "Store_Type",
+    "Store_Age_Years"
+  ],
+  "observed_store_profiles": [
+    {
+      "Store_Size": "Medium",
+      "Store_Location_City_Type": "Tier 1",
+      "Store_Type": "Departmental Store",
+      "Store_Age_Years": 26
+    },
+    {
+      "Store_Size": "Small",
+      "Store_Location_City_Type": "Tier 3",
+      "Store_Type": "Food Mart",
+      "Store_Age_Years": 27
+    },
+    {
+      "Store_Size": "High",
+      "Store_Location_City_Type": "Tier 2",
+      "Store_Type": "Supermarket Type1",
+      "Store_Age_Years": 38
+    },
+    {
+      "Store_Size": "Medium",
+      "Store_Location_City_Type": "Tier 2",
+      "Store_Type": "Supermarket Type2",
+      "Store_Age_Years": 16
+    }
+  ],
+  "purpose": "Input-support warnings, not prediction confidence intervals"
+}

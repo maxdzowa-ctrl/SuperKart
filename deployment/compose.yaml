@@ -1,0 +1,19 @@
+services:
+  backend:
+    build:
+      context: ./backend_files
+    ports:
+      - "7860:7860"
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend_files
+    ports:
+      - "8501:8501"
+    environment:
+      BACKEND_URL: http://backend:7860
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped

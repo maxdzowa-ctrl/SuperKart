@@ -1,0 +1,49 @@
+{
+  "version": "superkart_features_v1",
+  "reference_year": 2025,
+  "feature_columns": [
+    "Product_Weight",
+    "Product_Sugar_Content",
+    "Product_Allocated_Area",
+    "Product_MRP",
+    "Store_Size",
+    "Store_Location_City_Type",
+    "Store_Type",
+    "Product_Id_char",
+    "Store_Age_Years",
+    "Product_Type_Category"
+  ],
+  "numeric_features": [
+    "Product_Weight",
+    "Product_Allocated_Area",
+    "Product_MRP",
+    "Store_Age_Years"
+  ],
+  "categorical_features": [
+    "Product_Sugar_Content",
+    "Store_Size",
+    "Store_Location_City_Type",
+    "Store_Type",
+    "Product_Id_char",
+    "Product_Type_Category"
+  ],
+  "product_category_map": {
+    "Breads": "Perishables",
+    "Breakfast": "Perishables",
+    "Dairy": "Perishables",
+    "Fruits and Vegetables": "Perishables",
+    "Meat": "Perishables",
+    "Seafood": "Perishables",
+    "Baking Goods": "Non Perishables",
+    "Canned": "Non Perishables",
+    "Frozen Foods": "Non Perishables",
+    "Hard Drinks": "Non Perishables",
+    "Health and Hygiene": "Non Perishables",
+    "Household": "Non Perishables",
+    "Others": "Non Perishables",
+    "Snack Foods": "Non Perishables",
+    "Soft Drinks": "Non Perishables",
+    "Starchy Foods": "Non Perishables"
+  },
+  "category_mapping_status": "documented project convention"
+}
