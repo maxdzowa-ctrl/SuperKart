@@ -19,7 +19,7 @@ COPY app.py superkart_model.joblib model_metadata.json \
      feature_contract.json input_reference.json ./
 
 # Normalize copied-file permissions before switching users.
-# Directories need traversal permission; application files need read access.
+# Directories require traversal permission; files require read access.
 RUN useradd --create-home --uid 10001 appuser \
     && find /app -type d -exec chmod 755 {} + \
     && find /app -type f -exec chmod 644 {} +

@@ -96,8 +96,8 @@
   },
   "deployment_measurements": {
     "artifact_MiB": 19.38951301574707,
-    "single_prediction_ms": 136.78966350016708,
-    "batch_100_prediction_ms": 165.18487500025003,
+    "single_prediction_ms": 173.0625234999934,
+    "batch_100_prediction_ms": 181.25103199997739,
     "final_fit_seconds": 10.610451505999663
   },
   "artifact_sha256": "02f9d786b622aad911c0be6467edca84ba9590e7e4b07b80a49f46b134eb4d24",
